@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
 import User from './pages/User';
 import NotFound from './pages/NotFound';
+import UserView from './pages/UserView';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path='/' element={<Home/>} />
         <Route path='about' element={<About/>} />
         <Route path='user' element={<User/>} />
+        <Route path='/user/:id' element={<UserView/>} />
         <Route path='*' element={<NotFound/>} />
       </Routes>
     </>
